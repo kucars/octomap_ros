@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 2.8)
 project(octomap_ros)
 
 find_package(catkin REQUIRED COMPONENTS sensor_msgs tf octomap_msgs)
-find_package(octomap REQUIRED)
+#find_package(octomap REQUIRED)
+include("/usr/local/share/octomap/octomap-config.cmake")
 
 catkin_package(
   INCLUDE_DIRS include ${OCTOMAP_INCLUDE_DIRS}
